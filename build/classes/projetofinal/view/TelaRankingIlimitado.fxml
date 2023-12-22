@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="panePrincipalRanking" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetofinal.controller.ModoIlimitado.TelaRankingIlimitadoController">
+   <children>
+      <StackPane fx:id="stackPaneRanking" prefHeight="665.0" prefWidth="1200.0">
+         <children>
+            <Pane fx:id="PaneTelaDefundoRanking" prefHeight="665.0" prefWidth="1200.0">
+               <children>
+                  <ImageView fx:id="telaDeFundoRanking" fitHeight="665.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagens/telaRanking/teladefunfo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="paneInformacoesRanking" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="tituloRanking" fill="WHITE" layoutX="390.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ranking" textAlignment="CENTER" wrappingWidth="377.390625">
+                     <font>
+                        <Font name="Consolas" size="72.0" />
+                     </font>
+                  </Text>
+                  <GridPane fx:id="gridPaneInformacoesRanking" alignment="CENTER" layoutX="283.0" layoutY="183.0" prefHeight="411.0" prefWidth="634.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="267.0" minWidth="10.0" prefWidth="266.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="268.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fx:id="primeiroLugarRanking" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1º" textAlignment="CENTER" wrappingWidth="99.46875">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="segundoLugarRanking" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2º" textAlignment="CENTER" wrappingWidth="99.46875" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="terceiroLugarRanking" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3º" textAlignment="CENTER" wrappingWidth="99.46875" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="quartoLugarRanking" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4º" textAlignment="CENTER" wrappingWidth="99.46875" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="primeiroLugarPontuacao" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="pontuacao" textAlignment="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="segundoLugarPontuacao" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="pontuacao" textAlignment="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="terceiroLugarPontuacao" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="pontuacao" textAlignment="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="quartoLugarPontuacao" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="pontuacao" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="quartoLugarNome" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="nome" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="primerioLugarNome" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="nome" textAlignment="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="segundoLugarNome" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="nome" textAlignment="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="terceiroLugarNome" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="nome" textAlignment="CENTER" wrappingWidth="265.13671875" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="botaoVoltar" layoutX="547.0" layoutY="594.0" mnemonicParsing="false" onAction="#handleBotaoVoltarRanking" prefHeight="32.0" prefWidth="63.0" text="Voltar" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</Pane>

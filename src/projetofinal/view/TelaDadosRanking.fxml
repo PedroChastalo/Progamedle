@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="PaneDadosRankingIlimitado" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetofinal.controller.ModoIlimitado.TelaDadosRankingController">
+   <children>
+      <StackPane fx:id="stackPaneDadosRankingIlimitado" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Pane fx:id="paneInformacoesDadoRankingIlimitado" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <TextArea fx:id="caixaNick" layoutX="59.0" layoutY="93.0" prefHeight="24.0" prefWidth="200.0">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                  </TextArea>
+                  <Text fx:id="textoNick" layoutX="79.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inisira seu Nick para o ranking" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Button fx:id="botaoDadosRanking" layoutX="78.0" layoutY="153.0" mnemonicParsing="false" onAction="#enviarDadosRanking" text="Voltar para tela principal" />
+   </children>
+</Pane>
